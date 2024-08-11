@@ -38,7 +38,7 @@
 	reverse_proxy {
 		# for private networking replicas are exposed as multiple dns results, use those dns results as the upstreams
 		dynamic a {
-			name {$LOGO_PRIVATE_DOMAIN}
+			name {$LOGTO_PRIVATE_DOMAIN}
 			port {$CORE_APP_PORT}
 			refresh 1s
 			dial_timeout 30s
